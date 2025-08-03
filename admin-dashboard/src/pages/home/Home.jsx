@@ -19,7 +19,7 @@ const Home = () => {
 
         <div className="charts">
           <Featured />
-          <Chart/>
+          <Chart />
         </div>
       </div>
     </div>
