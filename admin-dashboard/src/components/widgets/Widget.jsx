@@ -77,7 +77,6 @@ const Widget = ({ type }) => {
         break;
         default:
             return null;
-            break; 
     }
   return (
     <div className="widget">
