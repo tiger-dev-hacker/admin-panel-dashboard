@@ -4,7 +4,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widgets/Widget';
 import './home.scss';
 import Chart from '../../components/chart/Chart';
-import Table from '../../components/table/Table';
+import DataTable from '../../components/table/Table';
 const Home = () => {
   return (
     <div className="home">
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="listTitle">
             Latest Transactions
           </div>
-          <Table />
+          <DataTable />
         </div>
       </div>
     </div>
