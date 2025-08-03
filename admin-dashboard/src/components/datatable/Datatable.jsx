@@ -4,17 +4,17 @@ import { userColumns, userRows } from "../../datatablesource";
 
 
 
-const paginationModel = { page: 0, pageSize: 5 };
+const paginationModel = { page: 0, pageSize: 9 };
 
 const Datatable = () => {
 
     const actionColumn = [
         {
-            field: "action", headerName: "Action", width: 200, renderCell: () => {
+            field: "action", headerName: "Action", width: 400, renderCell: () => {
                 return (
-                    <div className="cellAction">
-                        <div className="viewButton"> View </div>
-                        <div className="deleteButton"> Delete </div>
+                  <div className="cellAction">  
+                    <div className="viewButton"> View </div>
+                    <div className="deleteButton"> Delete </div>
                     </div>
                 );
             },
@@ -26,7 +26,7 @@ const Datatable = () => {
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
         initialState={{ pagination: { paginationModel } }}
-        pageSizeOptions={[5,10]}
+        pageSizeOptions={[5, 10, 15]}
         checkboxSelection
         sx={{ border: 0 }}
       />

@@ -16,7 +16,7 @@
     }
 
     .cellWithStatus{
-        padding: 5px;
+        padding: 3px;
         border-radius: 5px;
         
         &.active{
@@ -32,5 +32,28 @@
                      background-color: rgba(255, 0, 0, 0.05);
                      color: crimson;
                  }
+    }
+
+    .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton{
+            padding: 1px 10px;
+            border-radius: 3px;
+            color: darkblue;
+            border: 0.5px dotted rgba(0,0,139,0.596);
+            cursor: pointer;
+
+        }
+
+        .deleteButton{
+            padding: 1px 10px;
+                border-radius: 3px;
+                color: crimson;
+                border: 0.5px dotted rgba(0, 0, 139, 0.596);
+                cursor: pointer;
+        }
     }
 }
