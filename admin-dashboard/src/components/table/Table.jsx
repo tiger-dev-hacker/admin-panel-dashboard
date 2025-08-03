@@ -82,18 +82,18 @@ const DataTable = () => {
                 key={row.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                <TableCell>{row.id}</TableCell>
-                <TableCell align="right">
+                <TableCell className="tableCell">{row.id}</TableCell>
+                <TableCell className="tableCell" align="right">
                   <div className="cellWrapper">
                     <img src={row.img} alt="" className="image" />
                     {row.product}
                   </div>
                 </TableCell>
-                <TableCell align="right">{row.customer}</TableCell>
-                <TableCell align="right">{row.date}</TableCell>
-                <TableCell align="right">{row.amount}</TableCell>
-                <TableCell align="right">{row.method}</TableCell>
-                <TableCell align="right">
+                <TableCell className="tableCell" align="right">{row.customer}</TableCell>
+                <TableCell className="tableCell" align="right">{row.date}</TableCell>
+                <TableCell  className= "tableCell"align="right">{row.amount}</TableCell>
+                <TableCell  className="tableCell"align="right">{row.method}</TableCell>
+                <TableCell  className="tableCell" align="right">
                   <span className={`status ${row.status}`}>{ row.status}</span>
                 </TableCell>
               </TableRow>
